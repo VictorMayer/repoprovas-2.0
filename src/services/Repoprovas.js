@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = process.env.REACT_APP_API_URL === "prod" ? "link do deploy" : "http://localhost:4000";
+const BASE_URL = process.env.REACT_APP_API_URL === "prod" ? "https://repoprovas-2-0.herokuapp.com" : "http://localhost:4000";
 
 function sendExam(body) {
     return axios.post(`${BASE_URL}/exams`, body);

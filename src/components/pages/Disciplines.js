@@ -12,8 +12,6 @@ export default function Disciplines() {
     const { disciplines, periods } = formData;
     const navigate = useNavigate();
 
-    console.log(exams);
-
     useEffect(() => {
         if (!exams || !disciplines || !periods) navigate('/');
     });
